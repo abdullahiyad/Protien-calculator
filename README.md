@@ -1,4 +1,4 @@
-Protein Intake Calculator:
+Protein Calculator:
 
 A user-friendly web application designed to help individuals calculate their daily protein needs based on their weight,
 height, age, gender, and activity level.
