@@ -26,3 +26,5 @@ Technologies Used:
 -CSS3 for styling
 
 -JavaScript for calculations and interactivity
+
+Try it: https://abdullahiyad.github.io/Protien-calculator/
