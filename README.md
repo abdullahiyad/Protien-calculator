@@ -17,7 +17,12 @@ Enter your height in centimeters and weight in kilograms.
 Select your gender and age range.
 Choose your activity level (less than or more than 6 hours of activity per day).
 Click the "Calculate" button to get your personalized protein intake recommendation.
+
+
 Technologies Used:
+
 -HTML5 for structure
+
 -CSS3 for styling
+
 -JavaScript for calculations and interactivity
