@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merienda:wght@300..900&display=swap");
+root {
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --main-font-color: white;
+  --special-font-color: white;
+  --h-large-font: 60px;
+  --h-medium-font: 35px;
+  --h-small-font: 20px;
+  --border-box: 26px;
+  --box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+  --font: "Merienda", cursive;
+  --sec-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(23, 30, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 30, 126, 1) 0%,
+    rgba(65, 250, 235, 1) 100%
+  );
+  font-family: var(--sec-font);
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  padding: 25px 90px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: var(--special-font-color);
+  font-family: "Merienda", cursive;
+  font-size: var(--h-small-font);
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 35px;
+}
+header .burger-icon {
+  font-size: 22px;
+  display: none;
+}
+
+header nav {
+  width: 400px;
+  height: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .link {
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  text-transform: capitalize;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+}
+
+header nav .link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav .link:hover {
+  color: black;
+}
+
+main section {
+  width: 100%;
+  min-height: 90vh;
+  height: fit-content;
+  padding: 40px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main section div {
+  width: 50%;
+  height: 100%;
+}
+
+/* start home section */
+main .home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .home div {
+  width: 50%;
+  height: 100%;
+}
+
+main .home .home-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .home .home-img img {
+  width: 90%;
+}
+
+main .home .text {
+  font-family: var(--sec-font);
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .home .text h2 {
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 60px;
+}
+
+main .home .text h2 span {
+  color: cyan;
+  text-shadow: 0.5px 0.5px 90px white;
+  text-wrap: nowrap;
+}
+
+main .home .text p {
+  margin-top: 30px;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: var(--sec-font);
+  font-weight: bold;
+}
+main .home .text .btn-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+main .home .text a {
+  color: white;
+  padding: 20px;
+  border: 2px solid white;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+main .home .text a:hover {
+  color: cyan;
+  box-shadow: 5px 5px 25px cyan;
+}
+/* end home section */
+
+/* start calucation section */
+main .calculate form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: fit-content;
+}
+main .calculate form h2 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .calculate form div {
+  width: 400px;
+  height: 60px;
+  font-size: 25px;
+  display: flex;
+  color: white;
+  text-shadow: 0.5px 0.5px 2px black;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .calculate form input,
+main .calculate form select {
+  font-size: 20px;
+  width: 200px;
+  padding: 0px 5px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  height: 40px;
+  outline: none;
+  border: none;
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgb(128, 22, 152), rgb(32, 115, 210))
+    1;
+  color: white;
+  text-shadow: 0.5px 0.5px 2px black;
+}
+select option {
+  background-color: black;
+}
+.calculate form div.btn-box {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .calculate form button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 200px;
+  padding: 15px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* end calcuate section */
+
+/* start advices section */
+main .advices .advices-text {
+  color: #eee;
+}
+/* start advices section */
+main .advices .advices-text h2 {
+  font-size: 35px;
+  color: cyan;
+  margin-bottom: 50px;
+}
+main .advices .advices-text h3 {
+  font-size: 25px;
+}
+
+main .advices .advices-text ul {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+/* end sdvices section */
+
+/* footer section */
+footer {
+  height: 120px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.793);
+  color: white;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px 40px;
+}
+footer a {
+  color: inherit;
+}
+
+/* end footer */
+
+/* style for medium screens */
+@media (max-width: 1000px) {
+  main .home .text h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 840px) {
+  main .calculate form {
+    width: 400px;
+  }
+  main .calculate form div {
+    width: 300px;
+    font-size: 20px;
+  }
+  main .advices .advices-text h3 {
+    font-size: 20px;
+  }
+  main form select option {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  main section {
+    min-height: 70vh;
+  }
+
+  header {
+    padding: 5px 20px;
+  }
+
+  header .burger-icon {
+    display: block;
+  }
+
+  header nav {
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    backdrop-filter: blur(25px);
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+  }
+
+  header nav.visiable {
+    height: 200px;
+  }
+
+  main .home .text h2 {
+    font-size: 30px;
+  }
+
+  main .home .text p {
+    font-size: 20px;
+  }
+
+  main .advices .advices-text ul {
+    font-size: 16px;
+  }
+
+  main .home {
+    flex-direction: column;
+  }
+
+  main .home .text,
+  main .home .home-img {
+    width: 100%;
+  }
+
+  main .home .home-img {
+    margin-top: 30px;
+  }
+
+  main .calculate .calc-img {
+    display: none;
+  }
+
+  main .calculate {
+    margin-bottom: 0;
+  }
+
+  main .calculate form {
+    width: 100%;
+  }
+
+  main .advices {
+    flex-direction: column;
+  }
+
+  main .advices div {
+    width: 100%;
+  }
+
+  main .advices div.advices-img {
+    order: 1;
+    width: 100%;
+  }
+
+  main .advices div.advices-text {
+    order: 2;
+  }
+}
